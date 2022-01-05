@@ -8,3 +8,14 @@ void()
 	scanf("%d",&a);
 	while(a>0)
 	{
+		a=re%10;
+		e=a*a*a;
+		sum=sum+e;
+		re=re/10;
+	}
+	if(no==sum)
+		printf("%d is an armstrong number",no);
+	else
+		printf("%d is not an armstrong number",no);
+	getch();
+}
